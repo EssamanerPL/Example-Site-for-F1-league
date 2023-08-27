@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URC F1 league</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="logo">
+        <p>Welcome to URC F1 League</p>
+    </div>
+    <div class="menu2">
+        <a href="index.html"><img class="zdj-item" src="zdj/car.png"></a>
+    </div>
+     <div class="menu">
+        <button id="pokaz"><img id="menu" src="zdj/menu.png"></button>
+            <a class="item" href="clasification.html">Clasification</a>
+            <a class="item" href="">Twitch</a>
+            <a class="item" href="faq.html">Faq</a>
+            <a class="item" href="">Discord</a>
+     </div>
+     <div id="wysuwane">
+        <a class="witem" href="clasification.html">Clasification</a>
+        <a class="witem" href="">Twitch</a>
+        <a class="witem" href="faq.html">Faq</a>
+        <a class="witem" href="">Discord</a>
+    </div>
+</div>
+<div class="pytania-opis">
+    <div class="opis-faq">
+        <a id="the">The Most </a><a id="asked">Asked Questions </a><br>
+        <a id="here">Here is respond for them:</a><br>
+    </div>
+</div>
+<div class="pytania">
+<div class="boksik">
+    <div class="odpowiedzi">
+        <div class="box-pytanie1" id="box-pytanie1" >
+            <a>Where I can watch races?</a>
+        </div>
+        <div class="box-odpowiedz1" id="box-odpowiedz1" >
+            <a>On our Twich chanel or You Tube </a><a href="http://twich.tv/enigmastreamuje">Link Here</a>
+        </div>
+    </div>
+    <div class="odpowiedzi">
+        <div class="box-pytanie1" id="box-pytanie2" >
+            <a>Where I can watch races?</a>
+        </div>
+        <div class="box-odpowiedz1" id="box-odpowiedz2" >
+            <a>On our Twich chanel or You Tube </a><a href="http://twich.tv/enigmastreamuje">Link Here</a>
+        </div>
+    </div>
+    <div class="odpowiedzi">
+        <div class="box-pytanie1" id="box-pytanie3" >
+            <a>Where I can watch races?</a>
+        </div>
+        <div class="box-odpowiedz1" id="box-odpowiedz3" >
+            <a>On our Twich chanel or You Tube </a><a href="http://twich.tv/enigmastreamuje">Link Here</a>
+        </div>
+    </div>
+    <div class="odpowiedzi">
+        <div class="box-pytanie1" id="box-pytanie4" >
+            <a>Where I can watch races?</a>
+        </div>
+        <div class="box-odpowiedz1" id="box-odpowiedz4" >
+            <a>On our Twich chanel or You Tube </a><a href="http://twich.tv/enigmastreamuje">Link Here</a>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<script>
+$(document).ready(function() {
+    $("#pokaz").click(function() {
+        $("#wysuwane").slideToggle(100);
+    });
+});
+$(document).ready(function() {
+    $("#box-pytanie1").click(function() {
+        $("#box-odpowiedz1").slideToggle();
+    });
+});
+$(document).ready(function() {
+    $("#box-pytanie2").click(function() {
+        $("#box-odpowiedz2").slideToggle();
+    });
+});
+$(document).ready(function() {
+    $("#box-pytanie3").click(function() {
+        $("#box-odpowiedz3").slideToggle();
+    });
+});
+$(document).ready(function() {
+    $("#box-pytanie4").click(function() {
+        $("#box-odpowiedz4").slideToggle();
+    });
+});
+</script>
+</body>
+</html>
